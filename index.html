@@ -1,70 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            height: 100vh;
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-family: 'Arial', sans-serif;
-            text-align: center;
-            transition: background-image 1s ease-in-out, background-color 1s ease-in-out;
-            background-color: green; /* Set the default background color */
-        }
-
-        h1, p {
-            color: white;
-        }
-
-        h1 {
-            font-size: 3em;
-            margin: 0;
-        }
-
-        p {
-            font-size: 1.5em;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhinav's Portfolio</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<script>
-    var images = [
-        'url_to_image1.jpg',
-        'url_to_image2.jpg'
-    ];
-
-    var currentImageIndex = 0;
-
-    function changeBackground() {
-        document.body.style.backgroundImage = 'url(' + images[currentImageIndex] + ')';
-        document.body.style.backgroundColor = 'green'; /* Set the background color during transition */
-        currentImageIndex = (currentImageIndex + 1) % images.length;
-        setTimeout(function() {
-            document.body.style.backgroundColor = 'transparent'; /* Set it back to transparent after transition */
-        }, 1000); /* Adjust the delay based on the transition duration */
-    }
-
-    setInterval(changeBackground, 3000);
-
-    // Initial background change
-    changeBackground();
-</script>
-
-    <div>
-        <h1>Coming Soon</h1>
-        <p>Contact us at:mishra.abhinav4@gmail.com</a></p>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Abhinav</h1>
+      <p>Mountaineer | Actor | Data Scientist</p>
     </div>
+  </section>
 
+  <!-- Cards Section -->
+  <section class="cards">
+    <div class="card" onclick="window.location.href='climbing-chords.html'">
+      <h2>Climbing Chords</h2>
+      <p>My mountaineering journey</p>
+    </div>
+    <div class="card" onclick="window.location.href='cinephile-abhinav.html'">
+      <h2>Cinephile Abhinav</h2>
+      <p>My acting journey</p>
+    </div>
+    <div class="card" onclick="window.location.href='data-scientist.html'">
+      <h2>Data Scientist</h2>
+      <p>Energy analysis & smart grids</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Connect with me:</p>
+    <div class="social-links">
+      <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+      <a href="https://github.com/yourprofile" target="_blank">GitHub</a>
+      <a href="https://youtube.com/yourchannel" target="_blank">YouTube</a>
+    </div>
+  </footer>
 </body>
 </html>
